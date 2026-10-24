@@ -1,16 +1,16 @@
 <!-- ======================================================== -->
-<!-- 🟢 HEADER — DOMINAR AURORA GREEN PIXEL MATRIX              -->
+<!-- 🟢 HEADER — CORSAIR DOMINATOR RAM CAPELLIX RGB WAVE MATRIX  -->
 <!-- ======================================================== -->
 <p align="center">
   <img width="100%" src="./assets/name-grid.svg" alt="Soumya Ranjan Mohanta" />
 </p>
 
 <!-- ======================================================== -->
-<!-- ⚡ DYNAMIC TYPING SUBTITLE — DOMINAR HYPER-TOURING PROTOCOL -->
+<!-- ⚡ DYNAMIC TYPING SUBTITLE — DOMINATOR DDR5 PERFORMANCE    -->
 <!-- ======================================================== -->
 <p align="center">
   <a href="https://github.com/soumyaranjanmohanta123">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1200&color=00E676&center=true&vCenter=true&random=false&width=670&height=45&lines=%E2%9A%A1+Born+to+Sprint%2C+Built+to+Tour+%2F%2F+Full-Stack+Architect;%F0%9F%8F%8D%EF%B8%8F+Powered+by+Dominar+DOHC+%2F%2F+High-Torque+Engineering;%F0%9F%9F%A2+Crafting+High-Performance+Cloud+%26+Web+Microservices;%F0%9F%9A%80+Turning+Complex+Roadblocks+into+High-Speed+Code" alt="Dominar Typing Banner" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1200&color=00E676&center=true&vCenter=true&random=false&width=680&height=45&lines=%E2%9A%A1+CORSAIR+DOMINATOR+%2F%2F+High-Frequency+Full-Stack+Architect;%F0%9F%9F%A2+Powered+by+Capellix+RGB+Wave+%E2%80%A2+DDR5+7200MHz;%F0%9F%9A%80+Ultra-Low+Latency+Systems+%E2%80%A2+Next.js%2C+Python+%26+Rust;%F0%9F%92%8E+Forged+Aluminum+Engineering+%E2%80%A2+Zero+Bottlenecks" alt="Dominator RAM Typing Banner" />
   </a>
 </p>
 
@@ -33,18 +33,18 @@
 </p>
 
 <!-- ======================================================== -->
-<!-- 👁️ DOMINAR RPM / TORQUE METER                            -->
+<!-- 👁️ DOMINATOR CLOCK / PROFILE VIEWS                       -->
 <!-- ======================================================== -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=soumyaranjanmohanta123&label=DOMINAR+TORQUE+METER&color=00e676&style=for-the-badge&labelColor=070b09" alt="Dominar Torque Meter" />
+  <img src="https://komarev.com/ghpvc/?username=soumyaranjanmohanta123&label=DOMINATOR+DDR5+CLOCK&color=00e676&style=for-the-badge&labelColor=070b09" alt="Dominator Clock" />
 </p>
 
 <br/>
 
 <!-- ======================================================== -->
-<!-- 🧑‍💻 COCKPIT DIAGNOSTICS & TOP LANGUAGES                  -->
+<!-- 🧑‍💻 MODULE DIAGNOSTICS & TOP LANGUAGES                     -->
 <!-- ======================================================== -->
-### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="24" /> Dominar Cockpit Diagnostics
+### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="24" /> Dominator Module Diagnostics
 
 <table>
   <tr>
@@ -60,9 +60,9 @@
 <br/>
 
 <!-- ======================================================== -->
-<!-- 📊 STATS & STREAK (DOMINAR GREEN THEME)                  -->
+<!-- 📊 STATS & STREAK (DOMINATOR BENCHMARKS)                 -->
 <!-- ======================================================== -->
-### 📊 High-Torque Performance Analytics
+### 📊 High-Frequency Hardware Benchmarks
 
 <p align="center">
   <img height="175" src="https://github-readme-stats.vercel.app/api?username=soumyaranjanmohanta123&show_icons=true&bg_color=070b09&border_color=00e676&title_color=00e676&text_color=e2e8f0&icon_color=00ff88&rank_icon=github&include_all_commits=true&count_private=true&hide_border=false&border_radius=12" alt="GitHub Stats" />
@@ -73,9 +73,9 @@
 <br/>
 
 <!-- ======================================================== -->
-<!-- 🛠️ TECH ARSENAL                                          -->
+<!-- 🛠️ TECH STACK                                            -->
 <!-- ======================================================== -->
-### 🛠️ Tuned Engineering Stack
+### 🛠️ Tuned Engineering Arsenal
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -86,9 +86,9 @@
 <br/>
 
 <!-- ======================================================== -->
-<!-- 📦 FEATURED PROJECTS (DOMINAR GREEN THEME)               -->
+<!-- 📦 FEATURED PROJECTS                                     -->
 <!-- ======================================================== -->
-### 📦 Deployed Machine Repositories
+### 📦 Overclocked Repositories
 
 <table>
   <tr>
@@ -122,7 +122,7 @@
 <!-- ======================================================== -->
 <!-- 🐍 CONTRIBUTION GRAPH SNAKE                              -->
 <!-- ======================================================== -->
-### 🐍 Contribution Track
+### 🐍 High-Throughput Contribution Stream
 
 <p align="center">
   <img width="100%" src="https://raw.githubusercontent.com/soumyaranjanmohanta123/soumyaranjanmohanta123/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake Animation" />
@@ -132,5 +132,5 @@
 <!-- 💫 FOOTER                                                -->
 <!-- ======================================================== -->
 <p align="center">
-  <sub>🟢 <i>"Born to Sprint, Built to Tour."</i> — High-Torque Engineering by <a href="https://github.com/soumyaranjanmohanta123"><b>Soumya Ranjan Mohanta</b></a></sub>
+  <sub>🟢 <i>"Dominator Performance • Overclocked Stability."</i> — Engineered by <a href="https://github.com/soumyaranjanmohanta123"><b>Soumya Ranjan Mohanta</b></a></sub>
 </p>

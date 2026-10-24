@@ -1,560 +1,602 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 172" width="860" height="172">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 180" width="860" height="180">
   <defs>
-    <linearGradient id="dominarBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070b09" />
-      <stop offset="50%" stop-color="#0d1410" />
-      <stop offset="100%" stop-color="#070b09" />
+    <linearGradient id="dominatorChassis" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050806" />
+      <stop offset="50%" stop-color="#0a120d" />
+      <stop offset="100%" stop-color="#050806" />
     </linearGradient>
-    <linearGradient id="dominarBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00e676">
-        <animate attributeName="stop-color" values="#00e676;#00ff88;#10b981;#00e676" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="50%" stop-color="#00ff88">
-        <animate attributeName="stop-color" values="#00ff88;#10b981;#00e676;#00ff88" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#10b981">
-        <animate attributeName="stop-color" values="#10b981;#00e676;#00ff88;#10b981" dur="6s" repeatCount="indefinite" />
-      </stop>
+    <linearGradient id="dominatorBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141f17" />
+      <stop offset="50%" stop-color="#233529" />
+      <stop offset="100%" stop-color="#141f17" />
+    </linearGradient>
+    <linearGradient id="dominatorBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff88" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#00e676" />
     </linearGradient>
     <style>
-      @keyframes dominarPulse {
-        0%, 100% { fill: #00ff88; filter: drop-shadow(0 0 5px #00ff88); }
-        50% { fill: #059669; filter: drop-shadow(0 0 1px #00e676); }
+      /* Dominator RAM Capellix RGB Wave and Visor Sweeper */
+      @keyframes dominatorWave {
+        0% { fill: #00e676; filter: drop-shadow(0 0 2px #00e676); }
+        20% { fill: #ffffff; filter: drop-shadow(0 0 8px #00ff88); }
+        40% { fill: #00ff88; filter: drop-shadow(0 0 5px #00ff88); }
+        70% { fill: #059669; filter: drop-shadow(0 0 1px #059669); }
+        100% { fill: #00e676; filter: drop-shadow(0 0 2px #00e676); }
       }
-      @keyframes auroraPulse {
-        0%, 100% { fill: #00e676; filter: drop-shadow(0 0 6px #00e676); }
-        50% { fill: #10b981; filter: drop-shadow(0 0 2px #10b981); }
+      @keyframes capellixVisor {
+        0%, 100% { opacity: 0.25; filter: drop-shadow(0 0 1px #059669); }
+        50% { opacity: 1; fill: #ffffff; filter: drop-shadow(0 0 9px #00ff88); }
       }
-      .c-empty { fill: #121a15; }
-      .c-darkGreen { fill: #172d1f; }
-      .c-midGreen { fill: #1b5e35; }
-      .c-dominar { animation: dominarPulse 3.2s ease-in-out infinite; }
-      .c-aurora { animation: auroraPulse 3.8s ease-in-out infinite; }
+      @keyframes ramGlitz {
+        0%, 100% { opacity: 0.85; }
+        50% { opacity: 1; }
+      }
+      .c-empty { fill: #111a14; }
+      .c-dark  { fill: #172d1f; }
+      .c-mid   { fill: #1c5232; }
     </style>
   </defs>
-  <rect width="860" height="172" rx="14" fill="url(#dominarBg)" />
-  <rect x="1" y="1" width="858" height="170" rx="14" fill="none" stroke="url(#dominarBorder)" stroke-width="1.5" />
-  <rect x="24" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="24" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="24" y="51" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="24" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="24" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="24" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="24" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="24" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="24" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="38" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="38" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="38" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="38" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="38" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="38" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="38" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="38" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="38" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="52" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="52" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="52" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="52" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="52" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="52" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="52" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="52" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="52" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="66" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="66" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="66" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="66" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="66" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="66" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="66" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="66" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="66" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="80" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="80" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="80" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="80" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="80" y="79" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="80" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="80" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="80" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="80" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="94" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="94" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="94" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="94" y="65" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="94" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="94" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="94" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="94" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="94" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="108" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="108" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="108" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="108" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="108" y="79" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="108" y="93" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="108" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="108" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="108" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="122" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="122" y="37" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="122" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="122" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="122" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="122" y="93" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="122" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="122" y="121" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="122" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="136" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="136" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="136" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="136" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="136" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="136" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="136" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="136" y="121" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="136" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="150" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="150" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="150" y="51" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="150" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="150" y="79" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="150" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="150" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="150" y="121" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="150" y="135" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="164" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="164" y="37" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="164" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="164" y="65" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="164" y="79" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="164" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="164" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="164" y="121" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="164" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="178" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="178" y="37" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="178" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="178" y="65" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="178" y="79" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="178" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="178" y="107" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="178" y="121" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="178" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="192" y="23" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="192" y="37" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="192" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="192" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="192" y="79" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="192" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="192" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="192" y="121" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="192" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="206" y="23" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="206" y="37" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="206" y="51" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="206" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="206" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="206" y="93" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="206" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00e676" />
-  <rect x="206" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="206" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="220" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="220" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="220" y="51" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="220" y="65" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="220" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="220" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="220" y="107" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="220" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="220" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="234" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="234" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="234" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="234" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="234" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="234" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="234" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="234" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="234" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="248" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="248" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="248" y="51" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="248" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00ff88" />
-  <rect x="248" y="79" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="248" y="93" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="248" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="248" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="248" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="262" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="262" y="37" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="262" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="262" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="262" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="262" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="262" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="262" y="121" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="262" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="276" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="276" y="37" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="276" y="51" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="276" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="276" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="276" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="276" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="276" y="121" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="276" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="290" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="290" y="37" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="290" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="290" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="290" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="290" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="290" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="290" y="121" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="290" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="304" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="304" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="304" y="51" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="304" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00ff88" />
-  <rect x="304" y="79" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="304" y="93" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="304" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="304" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="304" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="318" y="23" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="318" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="318" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="318" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="318" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="318" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="318" y="107" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="318" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="318" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="332" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="332" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="332" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="332" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="332" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="332" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="332" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="332" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="332" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="346" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="346" y="37" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="346" y="51" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="346" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="346" y="79" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="346" y="93" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="346" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00e676" />
-  <rect x="346" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="346" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="360" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="360" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="360" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="360" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="360" y="79" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="360" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="360" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="360" y="121" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="360" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="374" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="374" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="374" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="374" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="374" y="79" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="374" y="93" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="374" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="374" y="121" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="374" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="388" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="388" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="388" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="388" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="388" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="388" y="93" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="388" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="388" y="121" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="388" y="135" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="402" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="402" y="37" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="402" y="51" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="402" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="402" y="79" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="402" y="93" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="402" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00e676" />
-  <rect x="402" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="402" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="416" y="23" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="416" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="416" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="416" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="416" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="416" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="416" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="416" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="416" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="430" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="430" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="430" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="430" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="430" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="430" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="430" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="430" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="430" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="444" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="444" y="37" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="444" y="51" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="444" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00ff88" />
-  <rect x="444" y="79" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="444" y="93" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="444" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="444" y="121" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="444" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="458" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="458" y="37" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="458" y="51" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="458" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="458" y="79" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="458" y="93" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="458" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="458" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="458" y="135" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="472" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="472" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="472" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="472" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00ff88" />
-  <rect x="472" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="472" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="472" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="472" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="472" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="486" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="486" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="486" y="51" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="486" y="65" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="486" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="486" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="486" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="486" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="486" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="500" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="500" y="37" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="500" y="51" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="500" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00ff88" />
-  <rect x="500" y="79" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="500" y="93" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="500" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="500" y="121" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="500" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="514" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="514" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="514" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="514" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="514" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="514" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="514" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="514" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="514" y="135" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="528" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="528" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="528" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="528" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="528" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="528" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="528" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="528" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="528" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="542" y="23" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="542" y="37" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="542" y="51" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="542" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="542" y="79" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="542" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="542" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="542" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="542" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="556" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="556" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="556" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="556" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="556" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="556" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="556" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="556" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="556" y="135" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="570" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="570" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="570" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="570" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="570" y="79" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="570" y="93" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="570" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00e676" />
-  <rect x="570" y="121" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="570" y="135" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="584" y="23" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="584" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="584" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="584" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="584" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="584" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="584" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="584" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="584" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="598" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="598" y="37" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="598" y="51" width="11" height="11" rx="2.5" class="c-aurora" fill="#00e676" />
-  <rect x="598" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="598" y="79" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="598" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="598" y="107" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="598" y="121" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="598" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="612" y="23" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="612" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="612" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="612" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="612" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="612" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="612" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="612" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="612" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="626" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="626" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="626" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="626" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="626" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="626" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="626" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="626" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="626" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="640" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="640" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="640" y="51" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="640" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00ff88" />
-  <rect x="640" y="79" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="640" y="93" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="640" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="640" y="121" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="640" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="654" y="23" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="654" y="37" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="654" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="654" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="654" y="79" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="654" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="654" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="654" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="654" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="668" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="668" y="37" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="668" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="668" y="65" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="668" y="79" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="668" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="668" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="668" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="668" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="682" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="682" y="37" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="682" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="682" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="682" y="79" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="682" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="682" y="107" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="682" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="682" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="696" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="696" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="696" y="51" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="696" y="65" width="11" height="11" rx="2.5" class="c-aurora" fill="#00ff88" />
-  <rect x="696" y="79" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="696" y="93" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="696" y="107" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="696" y="121" width="11" height="11" rx="2.5" class="c-dominar" fill="#00ff88" />
-  <rect x="696" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="710" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="710" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="710" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="710" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="710" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="710" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="710" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="710" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="710" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="724" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="724" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="724" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="724" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="724" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="724" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="724" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="724" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="724" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="738" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="738" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="738" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="738" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="738" y="79" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="738" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="738" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="738" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="738" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="752" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="752" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="752" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="752" y="65" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="752" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="752" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="752" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="752" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="752" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="766" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="766" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="766" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="766" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="766" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="766" y="93" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="766" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="766" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="766" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="780" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="780" y="37" width="11" height="11" rx="2.5" class="c-darkGreen" />
-  <rect x="780" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="780" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="780" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="780" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="780" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="780" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="780" y="135" width="11" height="11" rx="2.5" class="c-midGreen" />
-  <rect x="794" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="794" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="794" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="794" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="794" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="794" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="794" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="794" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="794" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="808" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="808" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="808" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="808" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="808" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="808" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="808" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="808" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="808" y="135" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="822" y="23" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="822" y="37" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="822" y="51" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="822" y="65" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="822" y="79" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="822" y="93" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="822" y="107" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="822" y="121" width="11" height="11" rx="2.5" class="c-empty" />
-  <rect x="822" y="135" width="11" height="11" rx="2.5" class="c-empty" />
+  <!-- Dominator RAM Forged Heatsink Chassis -->
+  <rect width="860" height="180" rx="12" fill="url(#dominatorChassis)" />
+  <rect x="1" y="1" width="858" height="178" rx="12" fill="none" stroke="url(#dominatorBorder)" stroke-width="1.5" opacity="0.85" />
+  <!-- Top Capellix Light Bar Frame -->
+  <rect x="12" y="8" width="836" height="16" rx="4" fill="url(#dominatorBarGrad)" stroke="#1a2e22" stroke-width="1" />
+  <rect x="34" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0s;" />
+  <rect x="62" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.09s;" />
+  <rect x="90" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.17s;" />
+  <rect x="118" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.26s;" />
+  <rect x="146" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.34s;" />
+  <rect x="174" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.43s;" />
+  <rect x="202" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.51s;" />
+  <rect x="230" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.6s;" />
+  <rect x="258" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.69s;" />
+  <rect x="286" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.77s;" />
+  <rect x="314" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.86s;" />
+  <rect x="342" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 0.94s;" />
+  <rect x="370" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.03s;" />
+  <rect x="398" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.11s;" />
+  <rect x="426" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.2s;" />
+  <rect x="454" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.29s;" />
+  <rect x="482" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.37s;" />
+  <rect x="510" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.46s;" />
+  <rect x="538" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.54s;" />
+  <rect x="566" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.63s;" />
+  <rect x="594" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.71s;" />
+  <rect x="622" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.8s;" />
+  <rect x="650" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.89s;" />
+  <rect x="678" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 1.97s;" />
+  <rect x="706" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 2.06s;" />
+  <rect x="734" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 2.14s;" />
+  <rect x="762" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 2.23s;" />
+  <rect x="790" y="12" width="18" height="8" rx="2" fill="#00ff88" style="animation: capellixVisor 2.4s ease-in-out infinite; animation-delay: 2.31s;" />
+  <circle cx="20" cy="16" r="2.5" fill="#374151" stroke="#111827" stroke-width="0.8" />
+  <circle cx="840" cy="16" r="2.5" fill="#374151" stroke="#111827" stroke-width="0.8" />
+  <rect x="24" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="24" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="24" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="24" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="24" y="88" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="24" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="24" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="24" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="24" y="144" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="38" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="38" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="38" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="38" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="38" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="38" y="102" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="38" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="38" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="38" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="52" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="52" y="46" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="52" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="52" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="52" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="52" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="52" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="52" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="52" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="66" y="32" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="66" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="66" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="66" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="66" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="66" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="66" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="66" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="66" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="80" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="80" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="80" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="80" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="80" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="80" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="80" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="80" y="130" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="80" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="94" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="94" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="94" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="94" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="94" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="94" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="94" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="94" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="94" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="108" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="108" y="46" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="108" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="108" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="108" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="108" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="108" y="116" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="108" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="108" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="122" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="122" y="46" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="122" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="122" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="122" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="122" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="122" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="122" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="122" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="136" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="136" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="136" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="136" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="136" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="136" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="136" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="136" y="130" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="136" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="150" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="150" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="150" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.37s;" />
+  <rect x="150" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.37s;" />
+  <rect x="150" y="88" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="150" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="150" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="150" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.37s;" />
+  <rect x="150" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="164" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="164" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.41s;" />
+  <rect x="164" y="60" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="164" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="164" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.41s;" />
+  <rect x="164" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="164" y="116" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="164" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.41s;" />
+  <rect x="164" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="178" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="178" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.46s;" />
+  <rect x="178" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="178" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="178" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.46s;" />
+  <rect x="178" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="178" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="178" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.46s;" />
+  <rect x="178" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="192" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="192" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.5s;" />
+  <rect x="192" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="192" y="74" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="192" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.5s;" />
+  <rect x="192" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="192" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="192" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.5s;" />
+  <rect x="192" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="206" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="206" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.54s;" />
+  <rect x="206" y="60" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="206" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="206" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="206" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.54s;" />
+  <rect x="206" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.54s;" />
+  <rect x="206" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="206" y="144" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="220" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="220" y="46" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="220" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="220" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="220" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="220" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="220" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="220" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="220" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="234" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="234" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="234" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="234" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="234" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="234" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="234" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="234" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="234" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="248" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="248" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="248" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.66s;" />
+  <rect x="248" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.66s;" />
+  <rect x="248" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.66s;" />
+  <rect x="248" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.66s;" />
+  <rect x="248" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.66s;" />
+  <rect x="248" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="248" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="262" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="262" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.7s;" />
+  <rect x="262" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="262" y="74" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="262" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="262" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="262" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="262" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.7s;" />
+  <rect x="262" y="144" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="276" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="276" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.74s;" />
+  <rect x="276" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="276" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="276" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="276" y="102" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="276" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="276" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.74s;" />
+  <rect x="276" y="144" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="290" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="290" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.79s;" />
+  <rect x="290" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="290" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="290" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="290" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="290" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="290" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.79s;" />
+  <rect x="290" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="304" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="304" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="304" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.83s;" />
+  <rect x="304" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.83s;" />
+  <rect x="304" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.83s;" />
+  <rect x="304" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.83s;" />
+  <rect x="304" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.83s;" />
+  <rect x="304" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="304" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="318" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="318" y="46" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="318" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="318" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="318" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="318" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="318" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="318" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="318" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="332" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="332" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="332" y="60" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="332" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="332" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="332" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="332" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="332" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="332" y="144" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="346" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="346" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.95s;" />
+  <rect x="346" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.95s;" />
+  <rect x="346" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.95s;" />
+  <rect x="346" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.95s;" />
+  <rect x="346" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.95s;" />
+  <rect x="346" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.95s;" />
+  <rect x="346" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="346" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="360" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="360" y="46" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="360" y="60" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="360" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="360" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="360" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="360" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="360" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 0.99s;" />
+  <rect x="360" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="374" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="374" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="374" y="60" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="374" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="374" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="374" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="374" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="374" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.03s;" />
+  <rect x="374" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="388" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="388" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="388" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="388" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="388" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="388" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="388" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="388" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.08s;" />
+  <rect x="388" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="402" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="402" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.12s;" />
+  <rect x="402" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.12s;" />
+  <rect x="402" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.12s;" />
+  <rect x="402" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.12s;" />
+  <rect x="402" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.12s;" />
+  <rect x="402" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.12s;" />
+  <rect x="402" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="402" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="416" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="416" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="416" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="416" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="416" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="416" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="416" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="416" y="130" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="416" y="144" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="430" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="430" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="430" y="60" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="430" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="430" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="430" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="430" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="430" y="130" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="430" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="444" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="444" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.24s;" />
+  <rect x="444" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.24s;" />
+  <rect x="444" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.24s;" />
+  <rect x="444" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.24s;" />
+  <rect x="444" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.24s;" />
+  <rect x="444" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.24s;" />
+  <rect x="444" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.24s;" />
+  <rect x="444" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="458" y="32" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="458" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="458" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.28s;" />
+  <rect x="458" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="458" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="458" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="458" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="458" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="458" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="472" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="472" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="472" y="60" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="472" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.32s;" />
+  <rect x="472" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="472" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="472" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="472" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="472" y="144" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="486" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="486" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="486" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.37s;" />
+  <rect x="486" y="74" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="486" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="486" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="486" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="486" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="486" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="500" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="500" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.41s;" />
+  <rect x="500" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.41s;" />
+  <rect x="500" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.41s;" />
+  <rect x="500" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.41s;" />
+  <rect x="500" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.41s;" />
+  <rect x="500" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.41s;" />
+  <rect x="500" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.41s;" />
+  <rect x="500" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="514" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="514" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="514" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="514" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="514" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="514" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="514" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="514" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="514" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="528" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="528" y="46" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="528" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="528" y="74" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="528" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="528" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="528" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="528" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="528" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="542" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="542" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.53s;" />
+  <rect x="542" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.53s;" />
+  <rect x="542" y="74" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="542" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="542" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="542" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="542" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="542" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="556" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="556" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="556" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="556" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.57s;" />
+  <rect x="556" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="556" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="556" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="556" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="556" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="570" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="570" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="570" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="570" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="570" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.61s;" />
+  <rect x="570" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.61s;" />
+  <rect x="570" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.61s;" />
+  <rect x="570" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.61s;" />
+  <rect x="570" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="584" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="584" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="584" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="584" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.66s;" />
+  <rect x="584" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="584" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="584" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="584" y="130" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="584" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="598" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="598" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.7s;" />
+  <rect x="598" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.7s;" />
+  <rect x="598" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="598" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="598" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="598" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="598" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="598" y="144" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="612" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="612" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="612" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="612" y="74" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="612" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="612" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="612" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="612" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="612" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="626" y="32" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="626" y="46" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="626" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="626" y="74" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="626" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="626" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="626" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="626" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="626" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="640" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="640" y="46" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="640" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.82s;" />
+  <rect x="640" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.82s;" />
+  <rect x="640" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.82s;" />
+  <rect x="640" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.82s;" />
+  <rect x="640" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.82s;" />
+  <rect x="640" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.82s;" />
+  <rect x="640" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="654" y="32" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="654" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.86s;" />
+  <rect x="654" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="654" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="654" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.86s;" />
+  <rect x="654" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="654" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="654" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="654" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="668" y="32" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="668" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.9s;" />
+  <rect x="668" y="60" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="668" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="668" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.9s;" />
+  <rect x="668" y="102" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="668" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="668" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="668" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="682" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="682" y="46" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.94s;" />
+  <rect x="682" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="682" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="682" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.94s;" />
+  <rect x="682" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="682" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="682" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="682" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="696" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="696" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="696" y="60" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.99s;" />
+  <rect x="696" y="74" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.99s;" />
+  <rect x="696" y="88" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.99s;" />
+  <rect x="696" y="102" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.99s;" />
+  <rect x="696" y="116" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.99s;" />
+  <rect x="696" y="130" width="11" height="11" rx="2" fill="#00e676" style="animation: dominatorWave 2.4s ease-in-out infinite; animation-delay: 1.99s;" />
+  <rect x="696" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="710" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="710" y="46" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="710" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="710" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="710" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="710" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="710" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="710" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="710" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="724" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="724" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="724" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="724" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="724" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="724" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="724" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="724" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="724" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="738" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="738" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="738" y="60" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="738" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="738" y="88" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="738" y="102" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="738" y="116" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="738" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="738" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="752" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="752" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="752" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="752" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="752" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="752" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="752" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="752" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="752" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="766" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="766" y="46" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="766" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="766" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="766" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="766" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="766" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="766" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="766" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="780" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="780" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="780" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="780" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="780" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="780" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="780" y="116" width="11" height="11" rx="2" class="c-mid" />
+  <rect x="780" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="780" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="794" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="794" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="794" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="794" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="794" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="794" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="794" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="794" y="130" width="11" height="11" rx="2" class="c-dark" />
+  <rect x="794" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="808" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="808" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="808" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="808" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="808" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="808" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="808" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="808" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="808" y="144" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="822" y="32" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="822" y="46" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="822" y="60" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="822" y="74" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="822" y="88" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="822" y="102" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="822" y="116" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="822" y="130" width="11" height="11" rx="2" class="c-empty" />
+  <rect x="822" y="144" width="11" height="11" rx="2" class="c-dark" />
+  <!-- DHX Heatsink Specs -->
+  <line x1="24" y1="164" x2="836" y2="164" stroke="#182c20" stroke-width="1" />
+  <text x="32" y="173" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#4d7c5e" letter-spacing="1.5px">DOMINATOR // DDR5 7200MHz</text>
+  <text x="828" y="173" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#4d7c5e" text-anchor="end" letter-spacing="1px">CAPELLIX RGB • DHX COOLING</text>
 </svg>
 
