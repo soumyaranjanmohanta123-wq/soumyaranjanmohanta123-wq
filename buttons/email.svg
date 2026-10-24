@@ -1,22 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="44" viewBox="0 0 160 44">
   <defs>
-    <linearGradient id="emGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8d847" />
-      <stop offset="100%" stop-color="#fe428e" />
+    <linearGradient id="raEmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9100" />
+      <stop offset="100%" stop-color="#ff0044" />
     </linearGradient>
   </defs>
-  <rect width="160" height="44" rx="10" fill="#141321" />
-  <rect x="1" y="1" width="158" height="42" rx="10" fill="none" stroke="url(#emGrad)" stroke-width="1.3" opacity="0.85" />
+  <rect width="160" height="44" rx="10" fill="#08080c" />
+  <rect x="1" y="1" width="158" height="42" rx="10" fill="none" stroke="url(#raEmGrad)" stroke-width="1.3" opacity="0.9" />
   
-  <!-- Email Icon -->
   <g transform="translate(18, 13)">
-    <rect x="1" y="3" width="18" height="13" rx="2" fill="none" stroke="#f8d847" stroke-width="1.6" />
-    <path d="M2 4.5 L10 11 L18 4.5" fill="none" stroke="#f8d847" stroke-width="1.4" stroke-linecap="round" />
+    <rect x="1" y="3" width="18" height="13" rx="2" fill="none" stroke="#ff9100" stroke-width="1.6" />
+    <path d="M2 4.5 L10 11 L18 4.5" fill="none" stroke="#ff9100" stroke-width="1.4" stroke-linecap="round" />
   </g>
 
-  <!-- Text -->
-  <text x="48" y="27" font-family="'JetBrains Mono', 'Inter', monospace" font-size="13" font-weight="600" fill="#f8d847" letter-spacing="0.5px">Email</text>
-  <circle cx="140" cy="22" r="3" fill="#f8d847">
-    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+  <text x="48" y="27" font-family="'JetBrains Mono', 'Inter', monospace" font-size="13" font-weight="600" fill="#ff9100" letter-spacing="0.5px">Email</text>
+  <circle cx="140" cy="22" r="3" fill="#ff0044">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
   </circle>
 </svg>
