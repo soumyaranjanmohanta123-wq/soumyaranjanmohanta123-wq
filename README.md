@@ -10,7 +10,7 @@
 <!-- ======================================================== -->
 <p align="center">
   <a href="https://github.com/soumyaranjanmohanta123">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1200&color=FE428E&center=true&vCenter=true&random=false&width=650&height=45&lines=%E2%9A%A1+Full-Stack+%26+Cloud+Software+Engineer;%F0%9F%A4%96+Building+Modern+AI-Powered+Applications;%F0%9F%92%A0+Crafting+Scalable+Full-Stack+Architectures;%F0%9F%94%A5+Passionate+Open-Source+Builder" alt="Animated Typing Banner" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1200&color=FE428E&center=true&vCenter=true&random=false&width=650&height=45&lines=%E2%9A%A1+Full-Stack+%26+Cloud+Software+Engineer;%F0%9F%A4%96+Building+Modern+AI-Powered+Applications;%F0%9F%92%A0+Crafting+High-Performance+Web+Apps;%F0%9F%9A%80+Always+Building+%26+Shipping+Clean+Code" alt="Animated Typing Banner" />
   </a>
 </p>
 
@@ -88,7 +88,7 @@
 <!-- ======================================================== -->
 <!-- 📦 FEATURED PROJECTS (RADICAL THEME)                     -->
 <!-- ======================================================== -->
-### 📦 Featured Open-Source Repositories
+### 📦 Featured Projects
 
 <table>
   <tr>
