@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿<!-- ============================================================
      SOUMYA RANJAN MOHANTA — GitHub Profile README
      Repository: soumyaranjanmohanta123/soumyaranjanmohanta123
@@ -301,6 +302,8 @@ Made with ❤️ &nbsp;·&nbsp; **soumyaranjanmohanta123** &nbsp;·&nbsp; 2026
 
 </div>
 =======
+=======
+>>>>>>> b87490c408e74445178c1cff4471e68113ee2224
 ## Hi there 👋
 
 <!--
@@ -317,4 +320,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<<<<<<< HEAD
+>>>>>>> b87490c408e74445178c1cff4471e68113ee2224
+=======
 >>>>>>> b87490c408e74445178c1cff4471e68113ee2224
