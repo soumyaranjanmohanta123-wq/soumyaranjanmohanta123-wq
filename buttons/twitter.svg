@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="44" viewBox="0 0 160 44">
   <defs>
-    <linearGradient id="raTwGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00f0ff" />
-      <stop offset="100%" stop-color="#ff0044" />
+    <linearGradient id="domTwGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#00e676" />
     </linearGradient>
   </defs>
-  <rect width="160" height="44" rx="10" fill="#08080c" />
-  <rect x="1" y="1" width="158" height="42" rx="10" fill="none" stroke="url(#raTwGrad)" stroke-width="1.3" opacity="0.9" />
+  <rect width="160" height="44" rx="10" fill="#070b09" />
+  <rect x="1" y="1" width="158" height="42" rx="10" fill="none" stroke="url(#domTwGrad)" stroke-width="1.3" opacity="0.9" />
   
   <g transform="translate(18, 13)">
-    <path fill="#00f0ff" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" transform="scale(0.8)"/>
+    <path fill="#00e676" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" transform="scale(0.8)"/>
   </g>
 
-  <text x="48" y="27" font-family="'JetBrains Mono', 'Inter', monospace" font-size="13" font-weight="600" fill="#00f0ff" letter-spacing="0.5px">Twitter/X</text>
-  <circle cx="140" cy="22" r="3" fill="#ff0044">
+  <text x="48" y="27" font-family="'JetBrains Mono', 'Inter', monospace" font-size="13" font-weight="600" fill="#a7f3d0" letter-spacing="0.5px">Twitter/X</text>
+  <circle cx="140" cy="22" r="3" fill="#00e676">
     <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
   </circle>
 </svg>
