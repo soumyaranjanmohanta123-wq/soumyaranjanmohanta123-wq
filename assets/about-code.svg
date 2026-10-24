@@ -1,0 +1,56 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 300" width="580" height="300">
+  <defs>
+    <style>
+      .bg   { fill: #0d1117; }
+      .win  { fill: #161b22; }
+      .bdr  { fill: #30363d; }
+      .dot1 { fill: #ff5f57; }
+      .dot2 { fill: #febc2e; }
+      .dot3 { fill: #28c840; }
+      .kw   { fill: #c792ea; font-family: JetBrains Mono,monospace; font-size: 13px; }
+      .fn   { fill: #82aaff; font-family: JetBrains Mono,monospace; font-size: 13px; }
+      .str  { fill: #c3e88d; font-family: JetBrains Mono,monospace; font-size: 13px; }
+      .op   { fill: #89ddff; font-family: JetBrains Mono,monospace; font-size: 13px; }
+      .cm   { fill: #546e7a; font-family: JetBrains Mono,monospace; font-size: 13px; }
+      .pl   { fill: #f07178; font-family: JetBrains Mono,monospace; font-size: 13px; }
+      .wh   { fill: #cdd6f4; font-family: JetBrains Mono,monospace; font-size: 13px; }
+      .num  { fill: #f78c6c; font-family: JetBrains Mono,monospace; font-size: 13px; }
+    </style>
+  </defs>
+
+  <!-- window -->
+  <rect width="580" height="300" class="bg" rx="10"/>
+  <rect x="1" y="1" width="578" height="298" rx="10" fill="none" stroke="#30363d" stroke-width="1.5"/>
+  <!-- title bar -->
+  <rect x="1" y="1" width="578" height="36" rx="10" class="win"/>
+  <rect x="1" y="28" width="578" height="9" class="win"/>
+  <!-- dots -->
+  <circle cx="22" cy="19" r="6" class="dot1"/>
+  <circle cx="42" cy="19" r="6" class="dot2"/>
+  <circle cx="62" cy="19" r="6" class="dot3"/>
+  <!-- filename -->
+  <text x="290" y="24" font-family="JetBrains Mono,monospace" font-size="12" fill="#6b7280" text-anchor="middle">soumya.ts</text>
+
+  <!-- line 1 -->
+  <text x="24" y="66"><tspan class="kw">const</tspan><tspan class="wh"> soumya </tspan><tspan class="op">=</tspan><tspan class="wh"> {</tspan></text>
+  <!-- line 2 -->
+  <text x="24" y="86"><tspan class="wh">  </tspan><tspan class="pl">name</tspan><tspan class="op">:</tspan><tspan class="str">  "Soumya Ranjan Mohanta"</tspan><tspan class="wh">,</tspan></text>
+  <!-- line 3 -->
+  <text x="24" y="106"><tspan class="wh">  </tspan><tspan class="pl">role</tspan><tspan class="op">:</tspan><tspan class="str">  "Full-Stack Developer"</tspan><tspan class="wh">,</tspan></text>
+  <!-- line 4 -->
+  <text x="24" y="126"><tspan class="wh">  </tspan><tspan class="pl">location</tspan><tspan class="op">:</tspan><tspan class="str"> "Bhubaneswar, India"</tspan><tspan class="wh">,</tspan></text>
+  <!-- line 5 -->
+  <text x="24" y="146"><tspan class="wh">  </tspan><tspan class="pl">focus</tspan><tspan class="op">:</tspan><tspan class="wh">  [</tspan><tspan class="str">"AI Tools"</tspan><tspan class="wh">, </tspan><tspan class="str">"Open Source"</tspan><tspan class="wh">],</tspan></text>
+  <!-- line 6 -->
+  <text x="24" y="166"><tspan class="wh">  </tspan><tspan class="pl">stack</tspan><tspan class="op">:</tspan><tspan class="wh">  [</tspan><tspan class="str">"TypeScript"</tspan><tspan class="wh">, </tspan><tspan class="str">"React"</tspan><tspan class="wh">, </tspan><tspan class="str">"Python"</tspan><tspan class="wh">],</tspan></text>
+  <!-- line 7 -->
+  <text x="24" y="186"><tspan class="wh">  </tspan><tspan class="pl">learning</tspan><tspan class="op">:</tspan><tspan class="str"> "Rust"</tspan><tspan class="wh">,</tspan></text>
+  <!-- line 8 -->
+  <text x="24" y="206"><tspan class="wh">  </tspan><tspan class="pl">streak</tspan><tspan class="op">:</tspan><tspan class="wh">  </tspan><tspan class="num">47</tspan><tspan class="wh">, </tspan><tspan class="cm">// days 🔥</tspan></text>
+  <!-- line 9 -->
+  <text x="24" y="226"><tspan class="wh">  </tspan><tspan class="pl">hireable</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="kw">true</tspan><tspan class="wh">,  </tspan><tspan class="cm">// ← yes, always</tspan></text>
+  <!-- line 10 -->
+  <text x="24" y="246"><tspan class="wh">}</tspan><tspan class="op">;</tspan></text>
+  <!-- line 11 blank + comment -->
+  <text x="24" y="270"><tspan class="cm">// joined GitHub: Oct 2020 · 248 followers · 1.2k stars</tspan></text>
+</svg>
