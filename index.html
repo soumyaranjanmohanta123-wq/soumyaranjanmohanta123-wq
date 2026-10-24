@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soumya Ranjan Mohanta · GitHub Profile</title>
+  <meta name="description" content="GitHub profile of Soumya Ranjan Mohanta — Full-Stack Developer, Open Source Enthusiast, and Tech Explorer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <svg class="gh-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        <span>soumyaranjanmohanta123</span>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-btn" id="btn-follow">Follow</button>
+        <button class="nav-btn nav-btn-ghost" id="btn-sponsor">&#10084; Sponsor</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="profile-main">
+    <section class="profile-hero">
+      <div class="hero-left">
+        <div class="avatar-wrapper" id="avatar-wrapper">
+          <img src="avatar.jpg" alt="Profile Avatar" class="avatar-img" id="profile-avatar" />
+          <div class="avatar-ring"></div>
+          <div class="avatar-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for work</span>
+          </div>
+        </div>
+        <div class="profile-meta">
+          <h1 class="profile-name">Soumya Ranjan Mohanta</h1>
+          <p class="profile-handle">@soumyaranjanmohanta123</p>
+          <p class="profile-bio">&#128640; Full-Stack Developer &middot; Open Source Enthusiast &middot; Building the future one commit at a time. Passionate about clean code, modern architectures &amp; developer tooling.</p>
+          <div class="profile-tags">
+            <span class="tag">&#128302; Working on AI tools</span>
+            <span class="tag">&#127807; Learning Rust</span>
+            <span class="tag">&#128172; Ask me about React</span>
+          </div>
+          <div class="profile-info-row">
+            <span class="info-item">&#128336; Joined Oct 2020</span>
+            <span class="info-item">&#128205; Bhubaneswar, India</span>
+            <span class="info-item">&#127760; soumya.dev</span>
+          </div>
+          <div class="follow-stats">
+            <a href="#" class="follow-stat"><strong>248</strong> <span>followers</span></a>
+            <span class="dot-sep">&middot;</span>
+            <a href="#" class="follow-stat"><strong>194</strong> <span>following</span></a>
+            <span class="dot-sep">&middot;</span>
+            <a href="#" class="follow-stat"><strong>1.2k</strong> <span>stars</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="stats-grid">
+          <div class="stat-card"><div class="stat-icon">&#128230;</div><div class="stat-value counter" data-target="127">0</div><div class="stat-label">Repositories</div></div>
+          <div class="stat-card"><div class="stat-icon">&#9889;</div><div class="stat-value counter" data-target="3482">0</div><div class="stat-label">Commits</div></div>
+          <div class="stat-card"><div class="stat-icon">&#128256;</div><div class="stat-value counter" data-target="214">0</div><div class="stat-label">Pull Requests</div></div>
+          <div class="stat-card"><div class="stat-icon">&#128027;</div><div class="stat-value counter" data-target="89">0</div><div class="stat-label">Issues</div></div>
+        </div>
+        <div class="streak-card">
+          <div class="streak-header">
+            <span class="streak-fire">&#128293;</span>
+            <div><div class="streak-label">Current Streak</div><div class="streak-subtitle">Keep it going!</div></div>
+            <div class="streak-days"><span class="counter" data-target="47">0</span><small>days</small></div>
+          </div>
+          <div class="streak-bar-wrap"><div class="streak-bar" id="streak-progress"></div></div>
+          <div class="streak-range"><span>Best: 91 days</span><span>Total: 1,247 days</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contribution-section">
+      <div class="section-header">
+        <h2 class="section-title">Contribution Activity</h2>
+        <div class="year-selector">
+          <button class="year-btn active" data-year="2026">2026</button>
+          <button class="year-btn" data-year="2025">2025</button>
+          <button class="year-btn" data-year="2024">2024</button>
+        </div>
+      </div>
+      <div class="contrib-card glass-card">
+        <div class="contrib-info">
+          <span class="contrib-total"><strong id="contrib-count">1,847</strong> contributions in the last year</span>
+          <div class="contrib-legend">
+            <span>Less</span>
+            <div class="legend-box" style="--c: hsl(250,50%,15%)"></div>
+            <div class="legend-box" style="--c: hsl(265,60%,35%)"></div>
+            <div class="legend-box" style="--c: hsl(270,70%,55%)"></div>
+            <div class="legend-box" style="--c: hsl(275,80%,70%)"></div>
+            <div class="legend-box" style="--c: hsl(280,90%,85%)"></div>
+            <span>More</span>
+          </div>
+        </div>
+        <div class="contrib-graph" id="contrib-graph"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Pinned Repositories</h2>
+        <a href="#" class="see-all-link">View all &rarr;</a>
+      </div>
+      <div class="repos-grid">
+        <div class="repo-card glass-card" id="repo-1">
+          <div class="repo-card-header">
+            <svg class="repo-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/></svg>
+            <div><h3 class="repo-name">nexus-ai-toolkit</h3><span class="repo-visibility">Public</span></div>
+          </div>
+          <p class="repo-desc">A modular AI toolkit for building production-ready LLM applications with built-in observability, caching, and RAG pipelines.</p>
+          <div class="repo-meta">
+            <span class="repo-lang"><span class="lang-dot" style="background:#3178c6"></span>TypeScript</span>
+            <span class="repo-stat">&#11088; 847</span><span class="repo-stat">&#127860; 132</span>
+          </div>
+          <div class="repo-card-footer">
+            <span class="repo-updated">Updated 2 days ago</span>
+            <button class="star-btn" id="star-btn-1" onclick="toggleStar(this, 'star-count-1', 847)">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+              Star <span id="star-count-1">847</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="repo-card glass-card" id="repo-2">
+          <div class="repo-card-header">
+            <svg class="repo-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/></svg>
+            <div><h3 class="repo-name">devflow-cli</h3><span class="repo-visibility">Public</span></div>
+          </div>
+          <p class="repo-desc">Supercharge your development workflow. Automated scaffolding, environment management, and CI/CD integration from the terminal.</p>
+          <div class="repo-meta">
+            <span class="repo-lang"><span class="lang-dot" style="background:#e34c26"></span>Rust</span>
+            <span class="repo-stat">&#11088; 563</span><span class="repo-stat">&#127860; 78</span>
+          </div>
+          <div class="repo-card-footer">
+            <span class="repo-updated">Updated 5 days ago</span>
+            <button class="star-btn" id="star-btn-2" onclick="toggleStar(this, 'star-count-2', 563)">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+              Star <span id="star-count-2">563</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="repo-card glass-card" id="repo-3">
+          <div class="repo-card-header">
+            <svg class="repo-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/></svg>
+            <div><h3 class="repo-name">react-aurora-ui</h3><span class="repo-visibility">Public</span></div>
+          </div>
+          <p class="repo-desc">A premium React component library with glassmorphism design, dark mode, and fluid micro-animations. 50+ components, zero runtime overhead.</p>
+          <div class="repo-meta">
+            <span class="repo-lang"><span class="lang-dot" style="background:#f0db4f"></span>JavaScript</span>
+            <span class="repo-stat">&#11088; 1.2k</span><span class="repo-stat">&#127860; 201</span>
+          </div>
+          <div class="repo-card-footer">
+            <span class="repo-updated">Updated 1 week ago</span>
+            <button class="star-btn" id="star-btn-3" onclick="toggleStar(this, 'star-count-3', 1200)">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+              Star <span id="star-count-3">1.2k</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="repo-card glass-card" id="repo-4">
+          <div class="repo-card-header">
+            <svg class="repo-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/></svg>
+            <div><h3 class="repo-name">graphql-shield-pro</h3><span class="repo-visibility">Public</span></div>
+          </div>
+          <p class="repo-desc">Advanced permission layer for GraphQL APIs. Role-based access control, field-level security, and audit logging out of the box.</p>
+          <div class="repo-meta">
+            <span class="repo-lang"><span class="lang-dot" style="background:#3178c6"></span>TypeScript</span>
+            <span class="repo-stat">&#11088; 389</span><span class="repo-stat">&#127860; 54</span>
+          </div>
+          <div class="repo-card-footer">
+            <span class="repo-updated">Updated 2 weeks ago</span>
+            <button class="star-btn" id="star-btn-4" onclick="toggleStar(this, 'star-count-4', 389)">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+              Star <span id="star-count-4">389</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="repo-card glass-card" id="repo-5">
+          <div class="repo-card-header">
+            <svg class="repo-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/></svg>
+            <div><h3 class="repo-name">cloud-pulse-monitor</h3><span class="repo-visibility">Public</span></div>
+          </div>
+          <p class="repo-desc">Real-time infrastructure monitoring dashboard. Integrates with AWS, GCP, Azure. Beautiful charts, alerting and Slack notifications.</p>
+          <div class="repo-meta">
+            <span class="repo-lang"><span class="lang-dot" style="background:#3572A5"></span>Python</span>
+            <span class="repo-stat">&#11088; 721</span><span class="repo-stat">&#127860; 98</span>
+          </div>
+          <div class="repo-card-footer">
+            <span class="repo-updated">Updated 3 weeks ago</span>
+            <button class="star-btn" id="star-btn-5" onclick="toggleStar(this, 'star-count-5', 721)">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+              Star <span id="star-count-5">721</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="repo-card glass-card" id="repo-6">
+          <div class="repo-card-header">
+            <svg class="repo-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/></svg>
+            <div><h3 class="repo-name">opendata-etl-engine</h3><span class="repo-visibility">Public</span></div>
+          </div>
+          <p class="repo-desc">High-performance ETL pipeline engine. Process 10M+ records/min with streaming support, data validation, and plug-in transformers.</p>
+          <div class="repo-meta">
+            <span class="repo-lang"><span class="lang-dot" style="background:#00ADD8"></span>Go</span>
+            <span class="repo-stat">&#11088; 294</span><span class="repo-stat">&#127860; 41</span>
+          </div>
+          <div class="repo-card-footer">
+            <span class="repo-updated">Updated 1 month ago</span>
+            <button class="star-btn" id="star-btn-6" onclick="toggleStar(this, 'star-count-6', 294)">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+              Star <span id="star-count-6">294</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section">
+      <div class="section-header"><h2 class="section-title">Languages &amp; Skills</h2></div>
+      <div class="skills-layout">
+        <div class="lang-chart-wrap glass-card">
+          <div class="lang-chart-title">Language Breakdown</div>
+          <div class="lang-donut-wrap">
+            <canvas id="langDonut" width="220" height="220"></canvas>
+            <div class="donut-center"><span class="donut-value">7</span><span class="donut-label">Languages</span></div>
+          </div>
+          <div class="lang-legend" id="lang-legend"></div>
+        </div>
+        <div class="skill-bars-wrap">
+          <div class="skill-bars-title glass-card">Tech Stack Proficiency</div>
+          <div class="skill-list glass-card">
+            <div class="skill-item"><span class="skill-name">TypeScript / JavaScript</span><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="95" style="--clr: #3178c6"></div></div><span class="skill-pct">95%</span></div>
+            <div class="skill-item"><span class="skill-name">React / Next.js</span><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92" style="--clr: #61dafb"></div></div><span class="skill-pct">92%</span></div>
+            <div class="skill-item"><span class="skill-name">Node.js / Express</span><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88" style="--clr: #68a063"></div></div><span class="skill-pct">88%</span></div>
+            <div class="skill-item"><span class="skill-name">Python / FastAPI</span><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82" style="--clr: #3572A5"></div></div><span class="skill-pct">82%</span></div>
+            <div class="skill-item"><span class="skill-name">Rust</span><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="60" style="--clr: #e34c26"></div></div><span class="skill-pct">60%</span></div>
+            <div class="skill-item"><span class="skill-name">Go</span><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="65" style="--clr: #00ADD8"></div></div><span class="skill-pct">65%</span></div>
+            <div class="skill-item"><span class="skill-name">Docker / K8s</span><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78" style="--clr: #0db7ed"></div></div><span class="skill-pct">78%</span></div>
+            <div class="skill-item"><span class="skill-name">PostgreSQL / Redis</span><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80" style="--clr: #336791"></div></div><span class="skill-pct">80%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section activity-section">
+      <div class="section-header"><h2 class="section-title">Recent Activity</h2></div>
+      <div class="activity-feed glass-card">
+        <div class="activity-item"><div class="activity-icon push">&#9889;</div><div class="activity-body"><div class="activity-text">Pushed <strong>3 commits</strong> to <a href="#" class="activity-link">nexus-ai-toolkit</a></div><div class="activity-time">2 hours ago</div></div></div>
+        <div class="activity-item"><div class="activity-icon star">&#11088;</div><div class="activity-body"><div class="activity-text">Starred <a href="#" class="activity-link">vercel/next.js</a></div><div class="activity-time">5 hours ago</div></div></div>
+        <div class="activity-item"><div class="activity-icon pr">&#128256;</div><div class="activity-body"><div class="activity-text">Opened PR <a href="#" class="activity-link">#247 &mdash; Add streaming support for RAG pipelines</a></div><div class="activity-time">1 day ago</div></div></div>
+        <div class="activity-item"><div class="activity-icon issue">&#128027;</div><div class="activity-body"><div class="activity-text">Closed issue <a href="#" class="activity-link">#183 &mdash; Memory leak in WebSocket handler</a></div><div class="activity-time">2 days ago</div></div></div>
+        <div class="activity-item"><div class="activity-icon fork">&#127860;</div><div class="activity-body"><div class="activity-text">Forked <a href="#" class="activity-link">huggingface/transformers</a></div><div class="activity-time">3 days ago</div></div></div>
+        <div class="activity-item"><div class="activity-icon push">&#9889;</div><div class="activity-body"><div class="activity-text">Released <strong>v2.4.0</strong> of <a href="#" class="activity-link">react-aurora-ui</a></div><div class="activity-time">1 week ago</div></div></div>
+      </div>
+    </section>
+
+    <section class="section achievements-section">
+      <div class="section-header"><h2 class="section-title">Achievements</h2></div>
+      <div class="achievements-grid">
+        <div class="achievement-badge"><div class="badge-glow"></div><div class="badge-icon">&#129416;</div><div class="badge-name">Pull Shark</div><div class="badge-tier gold">x4</div></div>
+        <div class="achievement-badge"><div class="badge-glow"></div><div class="badge-icon">&#129482;</div><div class="badge-name">Arctic Code Vault</div><div class="badge-tier silver">Contributor</div></div>
+        <div class="achievement-badge"><div class="badge-glow"></div><div class="badge-icon">&#128640;</div><div class="badge-name">Mars 2020 Contributor</div><div class="badge-tier platinum">Rare</div></div>
+        <div class="achievement-badge"><div class="badge-glow"></div><div class="badge-icon">&#11088;</div><div class="badge-name">Starstruck</div><div class="badge-tier gold">x3</div></div>
+        <div class="achievement-badge"><div class="badge-glow"></div><div class="badge-icon">&#128101;</div><div class="badge-name">Pair Extraordinaire</div><div class="badge-tier silver">x2</div></div>
+        <div class="achievement-badge"><div class="badge-glow"></div><div class="badge-icon">&#127775;</div><div class="badge-name">Galaxy Brain</div><div class="badge-tier platinum">Legendary</div></div>
+      </div>
+    </section>
+
+    <footer class="profile-footer">
+      <p>Made with &#10084;&#65039; &middot; soumyaranjanmohanta123 &middot; 2026</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
