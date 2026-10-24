@@ -1,19 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="44" viewBox="0 0 160 44">
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="46" viewBox="0 0 140 46" font-family="'Inter', -apple-system, 'Segoe UI', sans-serif">
   <defs>
-    <linearGradient id="domLiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00e676" />
-      <stop offset="100%" stop-color="#00ff88" />
+    <filter id="liGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#00e676" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="liBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e676"/>
+      <stop offset="50%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#10b981"/>
     </linearGradient>
+    <style>
+      @keyframes capellixPulse {
+        0%, 100% { opacity: 0.4; fill: #00e676; }
+        50% { opacity: 1; fill: #ffffff; filter: drop-shadow(0 0 4px #00ff88); }
+      }
+    </style>
   </defs>
-  <rect width="160" height="44" rx="10" fill="#070b09" />
-  <rect x="1" y="1" width="158" height="42" rx="10" fill="none" stroke="url(#domLiGrad)" stroke-width="1.3" opacity="0.9" />
-  
-  <g transform="translate(18, 12)">
-    <path fill="#00e676" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" transform="scale(0.83)"/>
+
+  <!-- Glowing Shadow & Chassis -->
+  <g filter="url(#liGlow)">
+    <rect x="2" y="2" width="136" height="42" rx="12" fill="#070b09" stroke="url(#liBorder)" stroke-width="1.4"/>
   </g>
 
-  <text x="48" y="27" font-family="'JetBrains Mono', 'Inter', monospace" font-size="13" font-weight="600" fill="#00ff88" letter-spacing="0.5px">LinkedIn</text>
-  <circle cx="140" cy="22" r="3" fill="#00e676">
-    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
-  </circle>
+  <!-- Top Glass Highlight -->
+  <path d="M 14 3 L 126 3 A 11 11 0 0 1 137 14 L 137 18 Q 70 12 3 18 L 3 14 A 11 11 0 0 1 14 3 Z" fill="#ffffff" opacity="0.04"/>
+
+  <!-- LinkedIn Icon -->
+  <g transform="translate(16, 14) scale(0.75)">
+    <path fill="#00e676" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+  </g>
+
+  <!-- Button Label -->
+  <text x="44" y="28" font-size="13" font-weight="600" fill="#f1f5f9" letter-spacing="0.3px">LinkedIn</text>
+
+  <!-- Capellix Status LED -->
+  <rect x="120" y="21" width="5" height="5" rx="1.5" fill="#00ff88" style="animation: capellixPulse 2s ease-in-out infinite;"/>
 </svg>

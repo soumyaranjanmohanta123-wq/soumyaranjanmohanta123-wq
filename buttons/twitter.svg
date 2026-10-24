@@ -1,19 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="44" viewBox="0 0 160 44">
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="46" viewBox="0 0 140 46" font-family="'Inter', -apple-system, 'Segoe UI', sans-serif">
   <defs>
-    <linearGradient id="domTwGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#00e676" />
+    <filter id="twGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#10b981" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="twBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#00e676"/>
+      <stop offset="100%" stop-color="#00ff88"/>
     </linearGradient>
+    <style>
+      @keyframes capellixPulseTw {
+        0%, 100% { opacity: 0.4; fill: #10b981; }
+        50% { opacity: 1; fill: #ffffff; filter: drop-shadow(0 0 4px #00ff88); }
+      }
+    </style>
   </defs>
-  <rect width="160" height="44" rx="10" fill="#070b09" />
-  <rect x="1" y="1" width="158" height="42" rx="10" fill="none" stroke="url(#domTwGrad)" stroke-width="1.3" opacity="0.9" />
-  
-  <g transform="translate(18, 13)">
-    <path fill="#00e676" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" transform="scale(0.8)"/>
+
+  <!-- Glowing Shadow & Chassis -->
+  <g filter="url(#twGlow)">
+    <rect x="2" y="2" width="136" height="42" rx="12" fill="#070b09" stroke="url(#twBorder)" stroke-width="1.4"/>
   </g>
 
-  <text x="48" y="27" font-family="'JetBrains Mono', 'Inter', monospace" font-size="13" font-weight="600" fill="#a7f3d0" letter-spacing="0.5px">Twitter/X</text>
-  <circle cx="140" cy="22" r="3" fill="#00e676">
-    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
-  </circle>
+  <!-- Top Glass Highlight -->
+  <path d="M 14 3 L 126 3 A 11 11 0 0 1 137 14 L 137 18 Q 70 12 3 18 L 3 14 A 11 11 0 0 1 14 3 Z" fill="#ffffff" opacity="0.04"/>
+
+  <!-- Twitter / X Icon -->
+  <g transform="translate(17, 15) scale(0.72)">
+    <path fill="#00e676" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </g>
+
+  <!-- Button Label -->
+  <text x="44" y="28" font-size="13" font-weight="600" fill="#f1f5f9" letter-spacing="0.3px">Twitter/X</text>
+
+  <!-- Capellix Status LED -->
+  <rect x="120" y="21" width="5" height="5" rx="1.5" fill="#00e676" style="animation: capellixPulseTw 2s ease-in-out infinite; animation-delay: 0.8s;"/>
 </svg>
