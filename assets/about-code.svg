@@ -22,13 +22,13 @@
         0%, 100% { opacity: 0.3; fill: #00e676; }
         50% { opacity: 1; fill: #ffffff; filter: drop-shadow(0 0 6px #00ff88); }
       }
-      .kw   { fill: #00e676; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; font-weight: 600; }
-      .pl   { fill: #00ff88; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
-      .str  { fill: #a7f3d0; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
-      .op   { fill: #10b981; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
-      .cm   { fill: #52796f; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; font-style: italic; }
-      .val  { fill: #6ee7b7; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
-      .wh   { fill: #e2e8f0; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
+      .kw   { fill: #00e676; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; font-weight: 600; }
+      .pl   { fill: #00ff88; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; }
+      .str  { fill: #a7f3d0; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; }
+      .op   { fill: #10b981; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; }
+      .cm   { fill: #52796f; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; font-style: italic; }
+      .val  { fill: #6ee7b7; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; }
+      .wh   { fill: #e2e8f0; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; }
       .cursor {
         fill: #00ff88;
         animation: blinkCursor 0.85s ease-in-out infinite;
@@ -53,12 +53,12 @@
     <rect x="42" y="0" width="10" height="9" rx="2" fill="#00ff88" style="animation: ramCapellix 1.8s ease-in-out infinite; animation-delay: 0.9s;" />
   </g>
 
-  <!-- Tab badge -->
-  <rect x="180" y="8" width="220" height="23" rx="5" fill="#060907" stroke="#1b3d2b" stroke-width="1" />
-  <text x="195" y="24" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#00e676" font-weight="bold">DOMINATOR // DDR5</text>
-  <text x="340" y="24" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#a7f3d0">soumya.ts</text>
+  <!-- Tab badge: soumya.py -->
+  <rect x="200" y="8" width="180" height="23" rx="5" fill="#060907" stroke="#1b3d2b" stroke-width="1" />
+  <text x="220" y="24" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#00e676" font-weight="bold">PROFILE</text>
+  <text x="285" y="24" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#a7f3d0">soumya.py</text>
 
-  <!-- iCUE Status Beacon -->
+  <!-- Status Beacon -->
   <g transform="translate(545, 20)">
     <circle cx="0" cy="0" r="4" fill="#00ff88" />
     <circle cx="0" cy="0" r="7" fill="none" stroke="#00ff88" stroke-width="1.3">
@@ -67,37 +67,40 @@
     </circle>
   </g>
 
-  <!-- Code content -->
+  <!-- Real Profile Code Content -->
   <!-- Line 1 -->
-  <text x="24" y="70"><tspan class="kw">const</tspan><tspan class="wh"> soumya</tspan><tspan class="op">:</tspan><tspan class="pl"> DominatorModule</tspan><tspan class="wh"> = {</tspan></text>
+  <text x="24" y="68"><tspan class="pl">developer</tspan><tspan class="wh"> = {</tspan></text>
   
   <!-- Line 2 -->
-  <text x="24" y="94"><tspan class="wh">  </tspan><tspan class="pl">name</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"Soumya Ranjan Mohanta"</tspan><tspan class="wh">,</tspan></text>
+  <text x="24" y="90"><tspan class="wh">  </tspan><tspan class="str">"name"</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"Soumya Ranjan"</tspan><tspan class="wh">,</tspan></text>
   
   <!-- Line 3 -->
-  <text x="24" y="118"><tspan class="wh">  </tspan><tspan class="pl">hardware</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"DOMINATOR TITANIUM // DDR5 7200MHz"</tspan><tspan class="wh">,</tspan></text>
+  <text x="24" y="112"><tspan class="wh">  </tspan><tspan class="str">"education"</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"MCA Graduate"</tspan><tspan class="wh">,</tspan></text>
   
   <!-- Line 4 -->
-  <text x="24" y="142"><tspan class="wh">  </tspan><tspan class="pl">role</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"Full-Stack Performance Architect"</tspan><tspan class="wh">,</tspan></text>
+  <text x="24" y="134"><tspan class="wh">  </tspan><tspan class="str">"career_focus"</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"Aspiring Python Full Stack Developer"</tspan><tspan class="wh">,</tspan></text>
   
   <!-- Line 5 -->
-  <text x="24" y="166"><tspan class="wh">  </tspan><tspan class="pl">latency</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"CL30 Ultra-Low • Zero Bottlenecks ⚡"</tspan><tspan class="wh">,</tspan></text>
+  <text x="24" y="156"><tspan class="wh">  </tspan><tspan class="str">"backend"</tspan><tspan class="op">:</tspan><tspan class="wh"> [</tspan><tspan class="str">"Python"</tspan><tspan class="wh">, </tspan><tspan class="str">"Django"</tspan><tspan class="wh">],</tspan></text>
   
   <!-- Line 6 -->
-  <text x="24" y="190"><tspan class="wh">  </tspan><tspan class="pl">powers</tspan><tspan class="op">:</tspan><tspan class="wh"> [</tspan><tspan class="str">"TypeScript"</tspan><tspan class="wh">, </tspan><tspan class="str">"Next.js"</tspan><tspan class="wh">, </tspan><tspan class="str">"Python"</tspan><tspan class="wh">, </tspan><tspan class="str">"Rust"</tspan><tspan class="wh">],</tspan></text>
+  <text x="24" y="178"><tspan class="wh">  </tspan><tspan class="str">"database"</tspan><tspan class="op">:</tspan><tspan class="wh"> [</tspan><tspan class="str">"SQL"</tspan><tspan class="wh">, </tspan><tspan class="str">"SQLite"</tspan><tspan class="wh">],</tspan></text>
   
   <!-- Line 7 -->
-  <text x="24" y="214"><tspan class="wh">  </tspan><tspan class="pl">rgbProfile</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"Capellix Emerald Wave // 60 FPS"</tspan><tspan class="wh">,</tspan></text>
+  <text x="24" y="200"><tspan class="wh">  </tspan><tspan class="str">"frontend"</tspan><tspan class="op">:</tspan><tspan class="wh"> [</tspan><tspan class="str">"HTML"</tspan><tspan class="wh">, </tspan><tspan class="str">"CSS"</tspan><tspan class="wh">, </tspan><tspan class="str">"JavaScript Fundamentals"</tspan><tspan class="wh">],</tspan></text>
   
   <!-- Line 8 -->
-  <text x="24" y="238"><tspan class="wh">  </tspan><tspan class="pl">hireable</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="val">true</tspan><tspan class="wh">,  </tspan><tspan class="cm">// High-throughput production ready</tspan></text>
+  <text x="24" y="222"><tspan class="wh">  </tspan><tspan class="str">"tools"</tspan><tspan class="op">:</tspan><tspan class="wh"> [</tspan><tspan class="str">"Git"</tspan><tspan class="wh">, </tspan><tspan class="str">"GitHub"</tspan><tspan class="wh">, </tspan><tspan class="str">"VS Code"</tspan><tspan class="wh">],</tspan></text>
   
   <!-- Line 9 -->
-  <text x="24" y="262"><tspan class="wh">  </tspan><tspan class="pl">overclocked</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="val">true</tspan></text>
-  
+  <text x="24" y="244"><tspan class="wh">  </tspan><tspan class="str">"open_to_work"</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="val">True</tspan><tspan class="wh">,</tspan></text>
+
   <!-- Line 10 -->
-  <text x="24" y="286"><tspan class="wh">};</tspan><rect x="42" y="274" width="8" height="15" rx="1" class="cursor" /></text>
-  
+  <text x="24" y="266"><tspan class="wh">  </tspan><tspan class="str">"mindset"</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"Continuous Learner &amp; Practical Builder"</tspan></text>
+
+  <!-- Line 11 -->
+  <text x="24" y="288"><tspan class="wh">}</tspan><rect x="36" y="276" width="8" height="14" rx="1" class="cursor" /></text>
+
   <!-- Footer Note -->
-  <text x="24" y="306" class="cm">// 🟢 Corsair Dominator Capellix RGB • Pure high-frequency code</text>
+  <text x="24" y="306" class="cm"># Practical skills, real projects, and clean code.</text>
 </svg>
