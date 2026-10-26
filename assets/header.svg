@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
   <defs>
 
-    <!-- Name gradient: indigo → violet → sky -->
+    <!-- GitHub dark name gradient: blue to lighter blue -->
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#818CF8"/>
-      <stop offset="45%"  stop-color="#C084FC"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
+      <stop offset="0%"   stop-color="#58a6ff"/>
+      <stop offset="45%"  stop-color="#a5d6ff"/>
+      <stop offset="100%" stop-color="#1f6feb"/>
     </linearGradient>
 
-    <!-- Divider gradient: fades out at edges -->
+    <!-- Divider gradient: GitHub blue fades at edges -->
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#6366F1" stop-opacity="0"/>
-      <stop offset="30%"  stop-color="#818CF8" stop-opacity="1"/>
-      <stop offset="70%"  stop-color="#38BDF8" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#1f6feb" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#58a6ff" stop-opacity="1"/>
+      <stop offset="70%"  stop-color="#388bfd" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Subtle glow on name text -->
+    <!-- Subtle glow on name text (GitHub blue) -->
     <filter id="nameGlow" x="-10%" y="-40%" width="120%" height="180%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
       <feColorMatrix in="blur" type="matrix"
-        values="0.5 0 0 0 0.32
-                0   0 0 0 0.24
-                0   0 0 0 0.98
-                0   0 0 0.6 0" result="coloredBlur"/>
+        values="0.22 0 0 0 0.34
+                0    0 0 0 0.53
+                0    0 0 0 1.0
+                0    0 0 0.55 0" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -40,7 +40,7 @@
     </filter>
 
     <style>
-      /* ── Staggered entrance animations ── */
+      /* Staggered entrance animations */
       .accent-dot {
         animation: dotPop 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.1s both;
       }
@@ -70,25 +70,24 @@
         from { transform: scale(0); opacity: 0; }
         to   { transform: scale(1); opacity: 1; }
       }
-      /* Continuous subtle pulse on the two accent dots */
       @keyframes pulse {
-        0%, 100% { opacity: 0.7; }
+        0%, 100% { opacity: 0.6; }
         50%       { opacity: 1;   }
       }
       .pulse { animation: pulse 3s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- ── Background: transparent ── -->
+  <!-- Background: transparent -->
   <rect width="900" height="220" fill="none"/>
 
-  <!-- ── Decorative accent dots (top corners) ── -->
-  <circle class="accent-dot" cx="200" cy="50" r="4" fill="#818CF8" filter="url(#dotGlow)" style="animation-delay:0.05s"/>
-  <circle class="accent-dot" cx="700" cy="50" r="4" fill="#38BDF8" filter="url(#dotGlow)" style="animation-delay:0.15s"/>
-  <circle class="accent-dot pulse" cx="200" cy="50" r="4" fill="#818CF8" filter="url(#dotGlow)"/>
-  <circle class="accent-dot pulse" cx="700" cy="50" r="4" fill="#38BDF8" filter="url(#dotGlow)"/>
+  <!-- Decorative accent dots (GitHub blue + green) -->
+  <circle class="accent-dot" cx="200" cy="50" r="4" fill="#58a6ff" filter="url(#dotGlow)" style="animation-delay:0.05s"/>
+  <circle class="accent-dot" cx="700" cy="50" r="4" fill="#3fb950" filter="url(#dotGlow)" style="animation-delay:0.15s"/>
+  <circle class="accent-dot pulse" cx="200" cy="50" r="4" fill="#58a6ff" filter="url(#dotGlow)"/>
+  <circle class="accent-dot pulse" cx="700" cy="50" r="4" fill="#3fb950" filter="url(#dotGlow)"/>
 
-  <!-- ── Main Name ── -->
+  <!-- Main Name -->
   <text class="name-text"
         x="450" y="115"
         text-anchor="middle"
@@ -101,12 +100,12 @@
     SOUMYA RANJAN MOHANTA
   </text>
 
-  <!-- ── Thin gradient divider ── -->
+  <!-- Thin gradient divider -->
   <line class="divider-line"
         x1="220" y1="135" x2="680" y2="135"
         stroke="url(#lineGrad)" stroke-width="1.5"/>
 
-  <!-- ── Subtitle ── -->
+  <!-- Subtitle -->
   <text class="subtitle-text"
         x="450" y="167"
         text-anchor="middle"
@@ -114,11 +113,11 @@
         font-size="15"
         font-weight="400"
         letter-spacing="5"
-        fill="#94A3B8">
+        fill="#8b949e">
     FULL-STACK ENGINEER
   </text>
 
-  <!-- ── Tagline ── -->
+  <!-- Tagline -->
   <text class="tagline-text"
         x="450" y="193"
         text-anchor="middle"
@@ -126,8 +125,9 @@
         font-size="12"
         font-weight="300"
         letter-spacing="3"
-        fill="#475569">
+        fill="#484f58">
     Open Source  ·  Django  ·  JavaScript  ·  Python  ·  SQL
   </text>
 
 </svg>
+

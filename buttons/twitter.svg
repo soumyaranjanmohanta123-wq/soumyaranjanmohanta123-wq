@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="172" height="48" viewBox="0 0 172 48">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#1E293B"/>
+      <stop offset="0%"   stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
     <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#1DA1F2"/>
-      <stop offset="100%" stop-color="#0EA5E9"/>
+      <stop offset="0%"   stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#388bfd"/>
     </linearGradient>
     <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1DA1F2" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#388bfd" flood-opacity="0.25"/>
     </filter>
     <clipPath id="clip">
       <rect width="172" height="48" rx="14"/>
@@ -18,7 +18,7 @@
 
   <!-- Shadow -->
   <g filter="url(#shadow)">
-    <rect width="172" height="48" rx="14" fill="#1DA1F2" opacity="0.2"/>
+    <rect width="172" height="48" rx="14" fill="#388bfd" opacity="0.15"/>
   </g>
 
   <!-- Card -->
@@ -28,9 +28,9 @@
   <!-- Glass highlight -->
   <rect x="1" y="1" width="170" height="20" rx="13" fill="white" opacity="0.04" clip-path="url(#clip)"/>
 
-  <!-- Twitter/X icon at x=14, y=13 (22x22) -->
+  <!-- Twitter/X icon -->
   <g transform="translate(14,13)">
-    <rect width="22" height="22" rx="4" fill="#1DA1F2"/>
+    <rect width="22" height="22" rx="4" fill="#58a6ff"/>
     <!-- X shape -->
     <path fill="white"
       d="M17.5 4h2.6L13.9 10.6 21 20h-5.5l-3.9-5.1L7.4 20H4.7l6.6-7-6.9-9h5.6l3.5 4.7L17.5 4zm-.9 14.4h1.4L7.9 5.4H6.4l10.2 13z"/>
@@ -41,9 +41,9 @@
         text-anchor="middle"
         font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
         font-size="13.5" font-weight="600" letter-spacing="0.3"
-        fill="#E2E8F0">Twitter / X</text>
+        fill="#f0f6fc">Twitter / X</text>
 
   <!-- Accent -->
-  <line x1="155" y1="14" x2="155" y2="34" stroke="#1DA1F2" stroke-width="1" opacity="0.6"/>
-  <circle cx="162" cy="24" r="3" fill="#1DA1F2" opacity="0.8"/>
+  <line x1="155" y1="14" x2="155" y2="34" stroke="#388bfd" stroke-width="1" opacity="0.6"/>
+  <circle cx="162" cy="24" r="3" fill="#58a6ff" opacity="0.8"/>
 </svg>
