@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
   <defs>
 
-    <!-- GitHub dark name gradient: blue to lighter blue -->
+    <!-- Green name gradient -->
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#58a6ff"/>
-      <stop offset="45%"  stop-color="#a5d6ff"/>
-      <stop offset="100%" stop-color="#1f6feb"/>
+      <stop offset="0%"   stop-color="#39d353"/>
+      <stop offset="45%"  stop-color="#a0f0a0"/>
+      <stop offset="100%" stop-color="#2ea043"/>
     </linearGradient>
 
-    <!-- Divider gradient: GitHub blue fades at edges -->
+    <!-- Divider gradient: green fades at edges -->
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#1f6feb" stop-opacity="0"/>
-      <stop offset="30%"  stop-color="#58a6ff" stop-opacity="1"/>
-      <stop offset="70%"  stop-color="#388bfd" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#238636" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#39d353" stop-opacity="1"/>
+      <stop offset="70%"  stop-color="#2ea043" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#238636" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Subtle glow on name text (GitHub blue) -->
+    <!-- Green glow on name text -->
     <filter id="nameGlow" x="-10%" y="-40%" width="120%" height="180%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
       <feColorMatrix in="blur" type="matrix"
-        values="0.22 0 0 0 0.34
-                0    0 0 0 0.53
-                0    0 0 0 1.0
+        values="0    0 0 0 0.1
+                0.55 0 0 0 0.7
+                0    0 0 0 0.2
                 0    0 0 0.55 0" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
@@ -81,11 +81,11 @@
   <!-- Background: transparent -->
   <rect width="900" height="220" fill="none"/>
 
-  <!-- Decorative accent dots (GitHub blue + green) -->
-  <circle class="accent-dot" cx="200" cy="50" r="4" fill="#58a6ff" filter="url(#dotGlow)" style="animation-delay:0.05s"/>
-  <circle class="accent-dot" cx="700" cy="50" r="4" fill="#3fb950" filter="url(#dotGlow)" style="animation-delay:0.15s"/>
-  <circle class="accent-dot pulse" cx="200" cy="50" r="4" fill="#58a6ff" filter="url(#dotGlow)"/>
-  <circle class="accent-dot pulse" cx="700" cy="50" r="4" fill="#3fb950" filter="url(#dotGlow)"/>
+  <!-- Decorative accent dots (green) -->
+  <circle class="accent-dot" cx="200" cy="50" r="4" fill="#39d353" filter="url(#dotGlow)" style="animation-delay:0.05s"/>
+  <circle class="accent-dot" cx="700" cy="50" r="4" fill="#2ea043" filter="url(#dotGlow)" style="animation-delay:0.15s"/>
+  <circle class="accent-dot pulse" cx="200" cy="50" r="4" fill="#39d353" filter="url(#dotGlow)"/>
+  <circle class="accent-dot pulse" cx="700" cy="50" r="4" fill="#2ea043" filter="url(#dotGlow)"/>
 
   <!-- Main Name -->
   <text class="name-text"
@@ -130,4 +130,3 @@
   </text>
 
 </svg>
-

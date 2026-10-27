@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 320" width="580" height="320">
   <defs>
     <linearGradient id="ramCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117" />
-      <stop offset="50%" stop-color="#161b22" />
-      <stop offset="100%" stop-color="#0d1117" />
+      <stop offset="0%" stop-color="#0a120d" />
+      <stop offset="50%" stop-color="#111a14" />
+      <stop offset="100%" stop-color="#0a120d" />
     </linearGradient>
     <linearGradient id="ramBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#58a6ff">
-        <animate attributeName="stop-color" values="#58a6ff;#388bfd;#1f6feb;#58a6ff" dur="5s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#39d353">
+        <animate attributeName="stop-color" values="#39d353;#2ea043;#00ff88;#39d353" dur="5s" repeatCount="indefinite" />
       </stop>
-      <stop offset="100%" stop-color="#3fb950">
-        <animate attributeName="stop-color" values="#3fb950;#2ea043;#238636;#3fb950" dur="5s" repeatCount="indefinite" />
+      <stop offset="100%" stop-color="#238636">
+        <animate attributeName="stop-color" values="#238636;#00e676;#2ea043;#238636" dur="5s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
     <style>
@@ -19,18 +19,18 @@
         50% { opacity: 0; }
       }
       @keyframes ramCapellix {
-        0%, 100% { opacity: 0.3; fill: #58a6ff; }
-        50% { opacity: 1; fill: #cae8ff; filter: drop-shadow(0 0 6px #388bfd); }
+        0%, 100% { opacity: 0.3; fill: #39d353; }
+        50% { opacity: 1; fill: #d4ffd9; filter: drop-shadow(0 0 6px #2ea043); }
       }
       .kw   { fill: #ff7b72; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; font-weight: 600; }
-      .pl   { fill: #79c0ff; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
-      .str  { fill: #a5d6ff; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
-      .op   { fill: #58a6ff; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
-      .cm   { fill: #8b949e; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; font-style: italic; }
-      .val  { fill: #3fb950; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
-      .wh   { fill: #c9d1d9; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
+      .pl   { fill: #7ee787; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
+      .str  { fill: #aff5b4; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
+      .op   { fill: #39d353; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
+      .cm   { fill: #7ee787; opacity: 0.7; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; font-style: italic; }
+      .val  { fill: #00ff88; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
+      .wh   { fill: #e6edf3; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
       .cursor {
-        fill: #58a6ff;
+        fill: #39d353;
         animation: blinkCursor 0.85s ease-in-out infinite;
       }
     </style>
@@ -41,27 +41,27 @@
   <rect x="1" y="1" width="578" height="318" rx="12" fill="none" stroke="url(#ramBorder)" stroke-width="1.5" />
 
   <!-- Title bar -->
-  <rect x="1" y="1" width="578" height="38" rx="12" fill="#161b22" />
-  <rect x="1" y="28" width="578" height="11" fill="#161b22" />
-  <line x1="1" y1="39" x2="579" y2="39" stroke="#21262d" stroke-width="1" />
+  <rect x="1" y="1" width="578" height="38" rx="12" fill="#111a14" />
+  <rect x="1" y="28" width="578" height="11" fill="#111a14" />
+  <line x1="1" y1="39" x2="579" y2="39" stroke="#1c2d20" stroke-width="1" />
 
   <!-- Dominator RAM Capellix Top LEDs -->
   <g transform="translate(16, 15)">
-    <rect x="0"  y="0" width="10" height="9" rx="2" fill="#58a6ff" style="animation: ramCapellix 1.8s ease-in-out infinite; animation-delay: 0.0s;" />
-    <rect x="14" y="0" width="10" height="9" rx="2" fill="#58a6ff" style="animation: ramCapellix 1.8s ease-in-out infinite; animation-delay: 0.3s;" />
-    <rect x="28" y="0" width="10" height="9" rx="2" fill="#58a6ff" style="animation: ramCapellix 1.8s ease-in-out infinite; animation-delay: 0.6s;" />
-    <rect x="42" y="0" width="10" height="9" rx="2" fill="#58a6ff" style="animation: ramCapellix 1.8s ease-in-out infinite; animation-delay: 0.9s;" />
+    <rect x="0"  y="0" width="10" height="9" rx="2" fill="#39d353" style="animation: ramCapellix 1.8s ease-in-out infinite; animation-delay: 0.0s;" />
+    <rect x="14" y="0" width="10" height="9" rx="2" fill="#39d353" style="animation: ramCapellix 1.8s ease-in-out infinite; animation-delay: 0.3s;" />
+    <rect x="28" y="0" width="10" height="9" rx="2" fill="#39d353" style="animation: ramCapellix 1.8s ease-in-out infinite; animation-delay: 0.6s;" />
+    <rect x="42" y="0" width="10" height="9" rx="2" fill="#39d353" style="animation: ramCapellix 1.8s ease-in-out infinite; animation-delay: 0.9s;" />
   </g>
 
   <!-- Tab badge -->
-  <rect x="180" y="8" width="220" height="23" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1" />
-  <text x="195" y="24" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#58a6ff" font-weight="bold">GITHUB // PROFILE</text>
-  <text x="340" y="24" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b949e">soumya.py</text>
+  <rect x="180" y="8" width="220" height="23" rx="5" fill="#0a120d" stroke="#238636" stroke-width="1" />
+  <text x="195" y="24" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#39d353" font-weight="bold">GITHUB // PROFILE</text>
+  <text x="340" y="24" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#7ee787">soumya.py</text>
 
   <!-- iCUE Status Beacon -->
   <g transform="translate(545, 20)">
-    <circle cx="0" cy="0" r="4" fill="#3fb950" />
-    <circle cx="0" cy="0" r="7" fill="none" stroke="#3fb950" stroke-width="1.3">
+    <circle cx="0" cy="0" r="4" fill="#39d353" />
+    <circle cx="0" cy="0" r="7" fill="none" stroke="#39d353" stroke-width="1.3">
       <animate attributeName="r" values="3.5;10" dur="1.5s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite" />
     </circle>
@@ -87,7 +87,7 @@
   <text x="24" y="190"><tspan class="wh">  </tspan><tspan class="pl">powers</tspan><tspan class="op">:</tspan><tspan class="wh"> [</tspan><tspan class="str">"Django"</tspan><tspan class="wh">, </tspan><tspan class="str">"JavaScript"</tspan><tspan class="wh">, </tspan><tspan class="str">"Python"</tspan><tspan class="wh">, </tspan><tspan class="str">"SQL"</tspan><tspan class="wh">],</tspan></text>
   
   <!-- Line 7 -->
-  <text x="24" y="214"><tspan class="wh">  </tspan><tspan class="pl">theme</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"GitHub Dark // #0d1117"</tspan><tspan class="wh">,</tspan></text>
+  <text x="24" y="214"><tspan class="wh">  </tspan><tspan class="pl">theme</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="str">"GitHub Emerald // #0a120d"</tspan><tspan class="wh">,</tspan></text>
   
   <!-- Line 8 -->
   <text x="24" y="238"><tspan class="wh">  </tspan><tspan class="pl">hireable</tspan><tspan class="op">:</tspan><tspan class="wh"> </tspan><tspan class="val">true</tspan><tspan class="wh">,  </tspan><tspan class="cm">// High-throughput production ready</tspan></text>
@@ -99,5 +99,5 @@
   <text x="24" y="286"><tspan class="wh">};</tspan><rect x="42" y="274" width="8" height="15" rx="1" class="cursor" /></text>
   
   <!-- Footer Note -->
-  <text x="24" y="306" class="cm">// ⚡ github.com/soumyaranjanmohanta123 • Open to opportunities</text>
+  <text x="24" y="306" class="cm">// ⚡ github.com/soumyaranjanmohanta123-wq • Open to opportunities</text>
 </svg>
